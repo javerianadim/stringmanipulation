@@ -1,15 +1,15 @@
 ﻿Module Module1
 
     Sub Main()
+        Dim reverse  As String
         Dim str As String
-        Dim reverse As String
-        Dim char As Char
+        Dim character As Char
         Dim count As Integer
 
 
+        reverse  = ""
         str = ""
-        reverse = ""
-        char = ""
+        character = ""
         count = 1
 
 
@@ -17,8 +17,8 @@
         str = Console.ReadLine()
 
         For count = Len(str) To 1 Step -1
-            char = Mid(str, 1)
-            reverse = reverse & char
+            character = Mid(str, 1)
+            reverse = reverse & character
 
         Next
         Console.WriteLine(reverse)
