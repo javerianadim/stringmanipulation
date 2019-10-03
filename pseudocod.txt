@@ -1,18 +1,18 @@
-DECLARE mystr = STRING
-DECLARE reverse = STRING
-DECLARE mychar = CHAR
+DECLARE reverse  = STRING
+DECLARE str = STRING
+DECLARE character = CHAR
 DECLARE count = INTEGER
 
-mystr=""
 reverse=""
-mychar""
-count=0
+str=""
+character=""
+count=1
 
-OUTPUT "Enter the value you wish to reverse"
-INPUT mystr
+OUTPUT "Enter value you want to reverse"
+INPUT str
 
-For count =Length(mystr) to 1 Step-1
-    mychar=MID(mystr,count)
-    reverse = reverse + mychar
+For count =Length(str) to 1 Step-1
+    character=MID(str,1)
+    reverse = reverse + character
 
 Next
