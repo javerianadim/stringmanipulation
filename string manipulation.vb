@@ -1,24 +1,24 @@
 ﻿Module Module1
 
     Sub Main()
-        Dim mystr As String
+        Dim str As String
         Dim reverse As String
-        Dim mychar As Char
+        Dim char As Char
         Dim count As Integer
 
 
-        mystr = ""
+        str = ""
         reverse = ""
-        mychar = ""
-        count = 0
+        char = ""
+        count = 1
 
 
-        Console.WriteLine("Enter the value you wish to revese:")
-        mystr = Console.ReadLine()
+        Console.WriteLine("Enter value you want to revese:")
+        str = Console.ReadLine()
 
-        For count = Len(mystr) To 1 Step -1
-            mychar = Mid(mystr, count)
-            reverse = reverse & mychar
+        For count = Len(str) To 1 Step -1
+            char = Mid(str, 1)
+            reverse = reverse & char
 
         Next
         Console.WriteLine(reverse)
