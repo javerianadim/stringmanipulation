@@ -1,0 +1,20 @@
+DECLARE Space : Integer 
+DECLARE Firstname : String
+DECLARE Secondname : String 
+DECLARE COUNT : Integer 
+DECLARE Length : Integer 
+ 
+ Firstname = " "
+ Secondname = " "
+ Count = 0 
+ Space = 0
+ Length = 0
+ 
+ Space = Locate ( Firstname ," ")
+ Firstname = left ( Firstname , Space -1)
+ 
+ Space = Locate ( Secondname , " ")
+ Secondname = right ( Secondname , Lenght - Space )
+ 
+
+ OUTPUT "Your Final Name is :" & Firstname , Secondname
