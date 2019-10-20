@@ -3,18 +3,31 @@ DECLARE Firstname : String
 DECLARE Secondname : String 
 DECLARE COUNT : Integer 
 DECLARE Length : Integer 
+DECLARE string1 : String 
+DECLARE string2 : String 
  
  Firstname = " "
  Secondname = " "
  Count = 0 
  Space = 0
  Length = 0
+ string1 = " " 
+ string2 = " "
  
- Space = Locate ( Firstname ," ")
- Firstname = left ( Firstname , Space -1)
+ OUTPUT "Enter First String:"
+ INPUT string1
+ 
+ OUTPUT " Enter Second String:"
+ INPUT string2
+ 
+ Space = Locate ( string1 ," ")
+ Firstname = left ( string1 , Space -1)
+ OUTPUT " Your First String is:" & Firstname
  
  Space = Locate ( Secondname , " ")
- Secondname = right ( Secondname , Lenght - Space )
+ Secondname = right ( string2 , Lenght - Space )
+ length = LENGTH(string2)
+ OUTPUT "Your Second String is:" & Secondname
  
 
  OUTPUT "Your Final Name is :" & Firstname , Secondname
