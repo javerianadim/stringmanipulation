@@ -2,7 +2,6 @@ DECLARE mystring : String
 DECLARE mystring2 : String 
 DECLARE count : Integer 
 DECLARE count2 : Integer 
-DECLARE TotalSum : Integer 
 DECLARE Sum1 : Integer 
 DECLARE Sum2 : Integer 
 DECLARE NextCharacter : Char 
@@ -14,13 +13,12 @@ mystring = " "
 mystring2 = " "
 count = 0
 count2 = 0
-TotalSum = " "
-Sum1 = " "
-Sum2 = " "
+Sum1 = 0
+Sum2 = 0
 NextCharacter = " "
 NextCharacter2 = " "
-ASCII1 = " "
-ASCII2 = " "
+ASCII1 = 0
+ASCII2 = 0
 
 OUTPUT " Enter Your String 1:" 
 INPUT mystring
