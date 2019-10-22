@@ -1,0 +1,54 @@
+DECLARE mystring : String
+DECLARE mystring2 : String 
+DECLARE count : Integer 
+DECLARE count2 : Integer 
+DECLARE TotalSum : Integer 
+DECLARE Sum1 : Integer 
+DECLARE Sum2 : Integer 
+DECLARE NextCharacter : Char 
+DECLARE NextCharacter2 : Char 
+DECLARE ASCII1 : Integer 
+DECLARE ASCII2 : Integer 
+
+mystring = " "
+mystring2 = " "
+count = 0
+count2 = 0
+TotalSum = " "
+Sum1 = " "
+Sum2 = " "
+NextCharacter = " "
+NextCharacter2 = " "
+ASCII1 = " "
+ASCII2 = " "
+
+OUTPUT " Enter Your String 1:" 
+INPUT mystring
+
+OUTPUT " Enter Your String 2:"
+INPUT mystring2 
+
+For Count = 1 to LENGTH (mystring1) 
+    NextCharacter = MID ( mystring , Count 1 , 1 )
+    ASCII1 = ASC( NextCharacter ) 
+    sum1 = sum1 + ASCII1 
+
+NEXT 
+For Count2 = 1 to LENGTH ( mystring2 )
+   NextCharacter2 = MID ( mystring2 , Count2 , 1 )
+   ASCII2 = ASC ( NextCharacter2 ) 
+   Sum2 = Sum2 + ASCII2 
+
+NEXT 
+IF Sum1 = Sum2 
+  THEN 
+   OUTPUT "This is an angram"
+  Else 
+  OUTPUT " This is not angram" 
+
+END IF 
+OUTPUT " ASCII OF STRING 1 IS:" & Sum1 
+OUTPUT " ASCII OF STRING 2 IS:" & Sum2 
+
+
+
